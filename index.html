@@ -1,92 +1,617 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-    <section class="section">
-        <div class="section-header border-b">
-            <h3 class="section-title">Deal of the Day</h3>
-
-            <div class="countdown">
-                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+	<body>
+		<div class="bg-blue">
+			<nav class="navbar">
+				<div class="logo">
+					<img src="./img/logo.svg" alt="" />
+				</div>
+				<div class="search rounded">
+					<input type="text" name="search" id="search" />
+					<svg
+						class="w-[16px] h-[16px] text-gray-800 dark:text-white"
+						aria-hidden="true"
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						fill="white"
+						viewBox="0 0 24 24"
+					>
+						<path
+							stroke="#287FF0"
+							stroke-linecap="round"
+							stroke-width="2"
+							d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"
+						/>
+					</svg>
+				</div>
+				<div class="action-buttons">
+					<div class="button selected">Login</div>
+					<div class="button text-white">
+						<p class="d-flex align-center">
+							More
+							<svg
+								class="w-[16px] h-[16px] text-gray-800 dark:text-white"
+								aria-hidden="true"
+								xmlns="http://www.w3.org/2000/svg"
+								width="16"
+								height="16"
+								fill="none"
+								viewBox="0 0 24 24"
+							>
+								<path
+									stroke="currentColor"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="m19 9-7 7-7-7"
+								/>
+							</svg>
+						</p>
+					</div>
+					<div class="button text-white">
+						<p class="d-flex align-center">
+							<svg
+								class="w-[16px] h-[16px] text-gray-800 dark:text-white"
+								aria-hidden="true"
+								xmlns="http://www.w3.org/2000/svg"
+								width="16"
+								height="16"
+								fill="currentColor"
+								viewBox="0 0 24 24"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M4 4a1 1 0 0 1 1-1h1.5a1 1 0 0 1 .979.796L7.939 6H19a1 1 0 0 1 .979 1.204l-1.25 6a1 1 0 0 1-.979.796H9.605l.208 1H17a3 3 0 1 1-2.83 2h-2.34a3 3 0 1 1-4.009-1.76L5.686 5H5a1 1 0 0 1-1-1Z"
+									clip-rule="evenodd"
+								/>
+							</svg>
+							Cart
+						</p>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<section class="categories-section">
+			<ul class="categories">
+				<li>
+					<a href="#" class="category">
+						<div class="category-image">
+							<img src="/img/Untitled.jpeg" alt="" />
+						</div>
+						<div class="category-details">
+							<p class="d-flex align-center fs-small">
+								Top offer
+								<svg
+									class="w-[16px] h-[16px] text-gray-800 dark:text-white"
+									aria-hidden="true"
+									xmlns="http://www.w3.org/2000/svg"
+									width="16"
+									height="16"
+									fill="none"
+									viewBox="0 0 24 24"
+								>
+									<path
+										stroke="currentColor"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="m19 9-7 7-7-7"
+									/>
+								</svg>
+							</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="category">
+						<div class="category-image">
+							<img src="/img/Untitled.jpeg" alt="" />
+						</div>
+						<div class="category-details">
+							<p class="d-flex align-center fs-small">
+								Mobile
+								<svg
+									class="w-[16px] h-[16px] text-gray-800 dark:text-white"
+									aria-hidden="true"
+									xmlns="http://www.w3.org/2000/svg"
+									width="16"
+									height="16"
+									fill="none"
+									viewBox="0 0 24 24"
+								>
+									<path
+										stroke="currentColor"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="m19 9-7 7-7-7"
+									/>
+								</svg>
+							</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="category">
+						<div class="category-image">
+							<img src="/img/Untitled.jpeg" alt="" />
+						</div>
+						<div class="category-details">
+							<p class="d-flex align-center fs-small">
+								Grocery
+								<svg
+									class="w-[16px] h-[16px] text-gray-800 dark:text-white"
+									aria-hidden="true"
+									xmlns="http://www.w3.org/2000/svg"
+									width="16"
+									height="16"
+									fill="none"
+									viewBox="0 0 24 24"
+								>
+									<path
+										stroke="currentColor"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="m19 9-7 7-7-7"
+									/>
+								</svg>
+							</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="category">
+						<div class="category-image">
+							<img src="/img/Untitled.jpeg" alt="" />
+						</div>
+						<div class="category-details">
+							<p class="d-flex align-center fs-small">
+								Fashion
+								<svg
+									class="w-[16px] h-[16px] text-gray-800 dark:text-white"
+									aria-hidden="true"
+									xmlns="http://www.w3.org/2000/svg"
+									width="16"
+									height="16"
+									fill="none"
+									viewBox="0 0 24 24"
+								>
+									<path
+										stroke="currentColor"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="m19 9-7 7-7-7"
+									/>
+								</svg>
+							</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="category">
+						<div class="category-image">
+							<img src="/img/Untitled.jpeg" alt="" />
+						</div>
+						<div class="category-details">
+							<p class="d-flex align-center fs-small">
+								Home
+								<svg
+									class="w-[16px] h-[16px] text-gray-800 dark:text-white"
+									aria-hidden="true"
+									xmlns="http://www.w3.org/2000/svg"
+									width="16"
+									height="16"
+									fill="none"
+									viewBox="0 0 24 24"
+								>
+									<path
+										stroke="currentColor"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="m19 9-7 7-7-7"
+									/>
+								</svg>
+							</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="category">
+						<div class="category-image">
+							<img src="/img/Untitled.jpeg" alt="" />
+						</div>
+						<div class="category-details">
+							<p class="d-flex align-center fs-small">
+								electronics
+								<svg
+									class="w-[16px] h-[16px] text-gray-800 dark:text-white"
+									aria-hidden="true"
+									xmlns="http://www.w3.org/2000/svg"
+									width="16"
+									height="16"
+									fill="none"
+									viewBox="0 0 24 24"
+								>
+									<path
+										stroke="currentColor"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="m19 9-7 7-7-7"
+									/>
+								</svg>
+							</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</section>
+		<section class="section-products">
+			<div class="products">
+				<div class="section-header border-b">
+					<div class="section-header-details">
+						<h3 class="section-title">Deal of the Day</h3>
+						<div class="countdown">
+							<svg
+								class="w-6 h-6 text-gray-800 dark:text-white"
+								aria-hidden="true"
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								fill="none"
+								viewBox="0 0 24 24"
+							>
+								<path
+									stroke="currentColor"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M12 8v4l3 3m6-3a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+								/>
+							</svg>
+							<span class="countdown-time text-grey">00 : 12 : 45 Left</span>
+						</div>
+					</div>
+					<div class="button bg-blue text-white">VIEW ALL</div>
+				</div>
+				<div class="section-body">
+					<ul class="products-list">
+						<li>
+							<a href="#" class="product">
+								<div class="product-image">
+									<img src="/img/Untitled.jpeg" alt="" />
+								</div>
+								<div class="product-details">
+									<div class="">watch</div>
+									<div class="text-green">Up to 50% off</div>
+									<div class="text-grey">some description</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="product">
+								<div class="product-image">
+									<img src="/img/Untitled.jpeg" alt="" />
+								</div>
+								<div class="product-details">
+									<div class="">watch</div>
+									<div class="text-green">Up to 50% off</div>
+									<div class="text-grey">some description</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="product">
+								<div class="product-image">
+									<img src="/img/Untitled.jpeg" alt="" />
+								</div>
+								<div class="product-details">
+									<div class="">watch</div>
+									<div class="text-green">Up to 50% off</div>
+									<div class="text-grey">some description</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="product">
+								<div class="product-image">
+									<img src="/img/Untitled.jpeg" alt="" />
+								</div>
+								<div class="product-details">
+									<div class="">watch</div>
+									<div class="text-green">Up to 50% off</div>
+									<div class="text-grey">some description</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="product">
+								<div class="product-image">
+									<img src="/img/Untitled.jpeg" alt="" />
+								</div>
+								<div class="product-details">
+									<div class="">watch</div>
+									<div class="text-green">Up to 50% off</div>
+									<div class="text-grey">some description</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="product">
+								<div class="product-image">
+									<img src="/img/Untitled.jpeg" alt="" />
+								</div>
+								<div class="product-details">
+									<div class="">watch</div>
+									<div class="text-green">Up to 50% off</div>
+									<div class="text-grey">some description</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="product">
+								<div class="product-image">
+									<img src="/img/Untitled.jpeg" alt="" />
+								</div>
+								<div class="product-details">
+									<div class="">watch</div>
+									<div class="text-green">Up to 50% off</div>
+									<div class="text-grey">some description</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="product">
+								<div class="product-image">
+									<img src="/img/Untitled.jpeg" alt="" />
+								</div>
+								<div class="product-details">
+									<div class="">watch</div>
+									<div class="text-green">Up to 50% off</div>
+									<div class="text-grey">some description</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="product">
+								<div class="product-image">
+									<img src="/img/Untitled.jpeg" alt="" />
+								</div>
+								<div class="product-details">
+									<div class="">watch</div>
+									<div class="text-green">Up to 50% off</div>
+									<div class="text-grey">some description</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="product">
+								<div class="product-image">
+									<img src="/img/Untitled.jpeg" alt="" />
+								</div>
+								<div class="product-details">
+									<div class="">watch</div>
+									<div class="text-green">Up to 50% off</div>
+									<div class="text-grey">some description</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="product">
+								<div class="product-image">
+									<img src="/img/Untitled.jpeg" alt="" />
+								</div>
+								<div class="product-details">
+									<div class="">watch</div>
+									<div class="text-green">Up to 50% off</div>
+									<div class="text-grey">some description</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="overflow_indicator">
+					<svg
+						class="w-6 h-6 text-gray-800 dark:text-white"
+						aria-hidden="true"
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						fill="none"
+						viewBox="0 0 24 24"
+					>
 						<path
 							stroke="currentColor"
 							stroke-linecap="round"
 							stroke-linejoin="round"
 							stroke-width="2"
-							d="M12 8v4l3 3m6-3a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+							d="m9 5 7 7-7 7"
 						/>
 					</svg>
-
-                <span class="countdown-time text-grey">00 : 00 : 00 Left</span>
-            </div>
-        </div>
-        <div class="section-body">
-            <ul class="products-list">
-                <li>
-                    <div class="product">
-                        <div class="product-image">
-                            <img src="/img/Untitled.jpeg" alt="" />
-                        </div>
-                        <div class="product-details">
-                            <div class="">watch</div>
-                            <div class="text-green">50%</div>
-                            <div class="text-grey">some description</div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="product">
-                        <div class="product-image">
-                            <img src="/img/Untitled.jpeg" alt="" />
-                        </div>
-                        <div class="product-details">
-                            <div class="">watch</div>
-                            <div class="text-green">50%</div>
-                            <div class="text-grey">some description</div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="product">
-                        <div class="product-image">
-                            <img src="/img/Untitled.jpeg" alt="" />
-                        </div>
-                        <div class="product-details">
-                            <div class="">watch</div>
-                            <div class="text-green">50%</div>
-                            <div class="text-grey">some description</div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="product">
-                        <div class="product-image">
-                            <img src="/img/Untitled.jpeg" alt="" />
-                        </div>
-                        <div class="product-details">
-                            <div class="">watch</div>
-                            <div class="text-green">50%</div>
-                            <div class="text-grey">some description</div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <div class="category">
-        <div class="category-image"><img src="/img/Untitled.jpeg" alt="" /></div>
-        <div class="category-details">
-            <div class="">watch</div>
-        </div>
-    </div>
-    <div class="button bg-blue text-white">VIEW ALL</button>
-</body>
-
+				</div>
+			</div>
+			<div class="offer-holder">
+				<img src="./img/offerImg.webp" alt="offer" />
+			</div>
+		</section>
+		<section class="section-products">
+			<div class="products">
+				<div class="section-header border-b">
+					<div class="section-header-details">
+						<div>
+							<h3 class="section-title">Books and music instrumental</h3>
+							<span class="fs-small text-grey">Shop Now!</span>
+						</div>
+					</div>
+					<div class="button bg-blue text-white">VIEW ALL</div>
+				</div>
+				<div class="section-body">
+					<ul class="products-list">
+						<li>
+							<a href="#" class="product">
+								<div class="product-image">
+									<img src="/img/violin.jpeg" alt="" />
+								</div>
+								<div class="product-details">
+									<div class="">violin</div>
+									<div class="text-green">Up to 50% off</div>
+									<div class="text-grey">some description</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="product">
+								<div class="product-image">
+									<img src="/img/flute.jpeg" alt="" />
+								</div>
+								<div class="product-details">
+									<div class="">flute</div>
+									<div class="text-green">Up to 50% off</div>
+									<div class="text-grey">some description</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="product">
+								<div class="product-image">
+									<img src="/img/sitar.jpeg" alt="" />
+								</div>
+								<div class="product-details">
+									<div class="">sitar</div>
+									<div class="text-green">Up to 50% off</div>
+									<div class="text-grey">some description</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="product">
+								<div class="product-image">
+									<img src="/img/Untitled.jpeg" alt="" />
+								</div>
+								<div class="product-details">
+									<div class="">watch</div>
+									<div class="text-green">Up to 50% off</div>
+									<div class="text-grey">some description</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="product">
+								<div class="product-image">
+									<img src="/img/Untitled.jpeg" alt="" />
+								</div>
+								<div class="product-details">
+									<div class="">watch</div>
+									<div class="text-green">Up to 50% off</div>
+									<div class="text-grey">some description</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="product">
+								<div class="product-image">
+									<img src="/img/Untitled.jpeg" alt="" />
+								</div>
+								<div class="product-details">
+									<div class="">watch</div>
+									<div class="text-green">Up to 50% off</div>
+									<div class="text-grey">some description</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="product">
+								<div class="product-image">
+									<img src="/img/Untitled.jpeg" alt="" />
+								</div>
+								<div class="product-details">
+									<div class="">watch</div>
+									<div class="text-green">Up to 50% off</div>
+									<div class="text-grey">some description</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="product">
+								<div class="product-image">
+									<img src="/img/Untitled.jpeg" alt="" />
+								</div>
+								<div class="product-details">
+									<div class="">watch</div>
+									<div class="text-green">Up to 50% off</div>
+									<div class="text-grey">some description</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="product">
+								<div class="product-image">
+									<img src="/img/Untitled.jpeg" alt="" />
+								</div>
+								<div class="product-details">
+									<div class="">watch</div>
+									<div class="text-green">Up to 50% off</div>
+									<div class="text-grey">some description</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="product">
+								<div class="product-image">
+									<img src="/img/Untitled.jpeg" alt="" />
+								</div>
+								<div class="product-details">
+									<div class="">watch</div>
+									<div class="text-green">Up to 50% off</div>
+									<div class="text-grey">some description</div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="product">
+								<div class="product-image">
+									<img src="/img/Untitled.jpeg" alt="" />
+								</div>
+								<div class="product-details">
+									<div class="">watch</div>
+									<div class="text-green">Up to 50% off</div>
+									<div class="text-grey">some description</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="overflow_indicator">
+					<svg
+						class="w-6 h-6 text-gray-800 dark:text-white"
+						aria-hidden="true"
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						fill="none"
+						viewBox="0 0 24 24"
+					>
+						<path
+							stroke="currentColor"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="m9 5 7 7-7 7"
+						/>
+					</svg>
+				</div>
+			</div>
+		</section>
+	</body>
 </html>
