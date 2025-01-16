@@ -5,17 +5,29 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+			integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 	</head>
 
 	<body>
 		<div class="bg-blue">
 			<nav class="navbar">
-				<div class="logo">
-					<img src="./img/logo.svg" alt="" />
-				</div>
+				<a href="#" class="logo">
+					<span class="main-logo">Flipkart</span>
+					<span class="tagline">
+						Explore
+						<span>Plus</span>
+					</span>
+				</a>
 				<div class="search rounded">
-					<input type="text" name="search" id="search" />
+					<input type="text" name="search" id="search" placeholder="Search" />
 					<svg
+						data-hover
 						class="w-[16px] h-[16px] text-gray-800 dark:text-white"
 						aria-hidden="true"
 						xmlns="http://www.w3.org/2000/svg"
@@ -34,6 +46,7 @@
 				</div>
 				<div class="menu-icon">
 					<svg
+						data-hover
 						class="w-6 h-6 text-gray-800 dark:text-white"
 						aria-hidden="true"
 						xmlns="http://www.w3.org/2000/svg"
@@ -57,6 +70,7 @@
 						<p class="d-flex align-center">
 							More
 							<svg
+								data-hover
 								class="w-[16px] h-[16px] text-gray-800 dark:text-white"
 								aria-hidden="true"
 								xmlns="http://www.w3.org/2000/svg"
@@ -77,21 +91,24 @@
 					</div>
 					<div class="button text-white">
 						<p class="d-flex align-center">
-							<svg
-								class="w-[16px] h-[16px] text-gray-800 dark:text-white"
+							<i class="fa-solid fa-cart-shopping"></i>
+							<!-- <svg
+								class="border"
 								aria-hidden="true"
 								xmlns="http://www.w3.org/2000/svg"
 								width="16"
 								height="16"
-								fill="currentColor"
+								fill="none"
 								viewBox="0 0 24 24"
 							>
 								<path
-									fill-rule="evenodd"
-									d="M4 4a1 1 0 0 1 1-1h1.5a1 1 0 0 1 .979.796L7.939 6H19a1 1 0 0 1 .979 1.204l-1.25 6a1 1 0 0 1-.979.796H9.605l.208 1H17a3 3 0 1 1-2.83 2h-2.34a3 3 0 1 1-4.009-1.76L5.686 5H5a1 1 0 0 1-1-1Z"
-									clip-rule="evenodd"
+									stroke="currentColor"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"
 								/>
-							</svg>
+							</svg> -->
 							Cart
 						</p>
 					</div>
@@ -103,12 +120,13 @@
 				<li>
 					<a href="#" class="category">
 						<div class="category-image">
-							<img src="./img/Untitled.jpeg" alt="" />
+							<img src="./img/topoffer.webp" alt="" />
 						</div>
 						<div class="category-details">
 							<p class="d-flex align-center fs-small">
 								Top offer
 								<svg
+									data-hover
 									class="w-[16px] h-[16px] text-gray-800 dark:text-white"
 									aria-hidden="true"
 									xmlns="http://www.w3.org/2000/svg"
@@ -132,12 +150,13 @@
 				<li>
 					<a href="#" class="category">
 						<div class="category-image">
-							<img src="./img/Untitled.jpeg" alt="" />
+							<img src="./img/mobile&tablets.webp" alt="" />
 						</div>
 						<div class="category-details">
 							<p class="d-flex align-center fs-small">
 								Mobile
 								<svg
+									data-hover
 									class="w-[16px] h-[16px] text-gray-800 dark:text-white"
 									aria-hidden="true"
 									xmlns="http://www.w3.org/2000/svg"
@@ -161,16 +180,17 @@
 				<li>
 					<a href="#" class="category">
 						<div class="category-image">
-							<img src="./img/Untitled.jpeg" alt="" />
+							<img src="./img/Grocery.webp" alt="" />
 						</div>
 						<div class="category-details">
 							<p class="d-flex align-center fs-small">
 								Grocery
 								<svg
+									data-hover
 									class="w-[16px] h-[16px] text-gray-800 dark:text-white"
 									aria-hidden="true"
 									xmlns="http://www.w3.org/2000/svg"
-									width="16"
+									width="24"
 									height="16"
 									fill="none"
 									viewBox="0 0 24 24"
@@ -190,12 +210,13 @@
 				<li>
 					<a href="#" class="category">
 						<div class="category-image">
-							<img src="./img/Untitled.jpeg" alt="" />
+							<img src="./img/Fashion.webp" alt="" />
 						</div>
 						<div class="category-details">
 							<p class="d-flex align-center fs-small">
 								Fashion
 								<svg
+									data-hover
 									class="w-[16px] h-[16px] text-gray-800 dark:text-white"
 									aria-hidden="true"
 									xmlns="http://www.w3.org/2000/svg"
@@ -219,12 +240,13 @@
 				<li>
 					<a href="#" class="category">
 						<div class="category-image">
-							<img src="./img/Untitled.jpeg" alt="" />
+							<img src="./img/Home&Kitchen.webp" alt="" />
 						</div>
 						<div class="category-details">
 							<p class="d-flex align-center fs-small">
 								Home
 								<svg
+									data-hover
 									class="w-[16px] h-[16px] text-gray-800 dark:text-white"
 									aria-hidden="true"
 									xmlns="http://www.w3.org/2000/svg"
@@ -248,12 +270,13 @@
 				<li>
 					<a href="#" class="category">
 						<div class="category-image">
-							<img src="./img/Untitled.jpeg" alt="" />
+							<img src="./img/Electronics.webp" alt="" />
 						</div>
 						<div class="category-details">
 							<p class="d-flex align-center fs-small">
 								electronics
 								<svg
+									data-hover
 									class="w-[16px] h-[16px] text-gray-800 dark:text-white"
 									aria-hidden="true"
 									xmlns="http://www.w3.org/2000/svg"
@@ -283,6 +306,7 @@
 						<h3 class="section-title">Deal of the Day</h3>
 						<div class="countdown">
 							<svg
+								data-hover
 								class="w-6 h-6 text-gray-800 dark:text-white"
 								aria-hidden="true"
 								xmlns="http://www.w3.org/2000/svg"
@@ -309,132 +333,112 @@
 						<li>
 							<a href="#" class="product">
 								<div class="product-image">
-									<img src="./img/Untitled.jpeg" alt="" />
+									<img src="./img/offer-luggage.webp" alt="" />
 								</div>
 								<div class="product-details">
-									<div class="">watch</div>
-									<div class="text-green">Up to 50% off</div>
-									<div class="text-grey">some description</div>
+									<div class="">Luggage</div>
+									<div class="text-green">Up to 80% off</div>
+									<div class="text-grey">
+										Hard Body Set of 2 Luggage 4 Wheels - Magnum Zeno 2P set 4W
+										- Teal
+									</div>
 								</div>
 							</a>
 						</li>
 						<li>
 							<a href="#" class="product">
 								<div class="product-image">
-									<img src="./img/Untitled.jpeg" alt="" />
+									<img src="./img/offer-shirt.webp" alt="" />
 								</div>
 								<div class="product-details">
-									<div class="">watch</div>
-									<div class="text-green">Up to 50% off</div>
-									<div class="text-grey">some description</div>
+									<div class="">Men Casual Shirt</div>
+									<div class="text-green">Up to 60% off</div>
+									<div class="text-grey">
+										Men Slim Fit Printed Spread Collar Casual Shirt
+									</div>
 								</div>
 							</a>
 						</li>
 						<li>
 							<a href="#" class="product">
 								<div class="product-image">
-									<img src="./img/Untitled.jpeg" alt="" />
+									<img src="./img/offer-Stylish-Mojaris.webp" alt="" />
 								</div>
 								<div class="product-details">
-									<div class="">watch</div>
+									<div class="">Stylish Mojaris</div>
 									<div class="text-green">Up to 50% off</div>
-									<div class="text-grey">some description</div>
+									<div class="text-grey">
+										oadster4817 Lightweight Comfort Summer Trendy Premium
+										Stylish Mojaris For Men (Brown , 10)
+									</div>
 								</div>
 							</a>
 						</li>
 						<li>
 							<a href="#" class="product">
 								<div class="product-image">
-									<img src="./img/Untitled.jpeg" alt="" />
+									<img src="./img/offer-Cotton-Kurta-Pant-Set.webp" alt="" />
 								</div>
 								<div class="product-details">
-									<div class="">watch</div>
+									<div class="">Cotton Kurta Pant Set</div>
 									<div class="text-green">Up to 50% off</div>
-									<div class="text-grey">some description</div>
+									<div class="text-grey">Women Pure Cotton Kurta Pant Set</div>
 								</div>
 							</a>
 						</li>
 						<li>
 							<a href="#" class="product">
 								<div class="product-image">
-									<img src="./img/Untitled.jpeg" alt="" />
+									<img src="./img/offer-Women-Top.webp" alt="" />
 								</div>
 								<div class="product-details">
-									<div class="">watch</div>
-									<div class="text-green">Up to 50% off</div>
-									<div class="text-grey">some description</div>
+									<div class="">JOCKEY Cotton Rich Women Top</div>
+									<div class="text-green">Up to 90% off</div>
+									<div class="text-grey">
+										JOCKEY 2503 Super Combed Cotton Rich Women Top Thermal
+									</div>
 								</div>
 							</a>
 						</li>
 						<li>
 							<a href="#" class="product">
 								<div class="product-image">
-									<img src="./img/Untitled.jpeg" alt="" />
+									<img src="./img/offer-Sneakers.webp" alt="" />
 								</div>
 								<div class="product-details">
-									<div class="">watch</div>
-									<div class="text-green">Up to 50% off</div>
-									<div class="text-grey">some description</div>
+									<div class="">Hurdler Sneakers For Men</div>
+									<div class="text-green">Up to 70% off</div>
+									<div class="text-grey">
+										Hurdler IDP Sneakers For Men (Multicolor , 10)
+									</div>
 								</div>
 							</a>
 						</li>
 						<li>
 							<a href="#" class="product">
 								<div class="product-image">
-									<img src="./img/Untitled.jpeg" alt="" />
+									<img src="./img/offer-goldset.webp" alt="" />
 								</div>
 								<div class="product-details">
-									<div class="">watch</div>
-									<div class="text-green">Up to 50% off</div>
-									<div class="text-grey">some description</div>
+									<div class="">Gold Jewel Set</div>
+									<div class="text-green">Up to 30% off</div>
+									<div class="text-grey">
+										Brass Gold-plated Rose Gold Jewel Set (Pack of 1)
+									</div>
 								</div>
 							</a>
 						</li>
 						<li>
 							<a href="#" class="product">
 								<div class="product-image">
-									<img src="./img/Untitled.jpeg" alt="" />
+									<img src="./img/offer-women-shoe.webp" alt="" />
 								</div>
 								<div class="product-details">
-									<div class="">watch</div>
+									<div class="">women shoe</div>
 									<div class="text-green">Up to 50% off</div>
-									<div class="text-grey">some description</div>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#" class="product">
-								<div class="product-image">
-									<img src="./img/Untitled.jpeg" alt="" />
-								</div>
-								<div class="product-details">
-									<div class="">watch</div>
-									<div class="text-green">Up to 50% off</div>
-									<div class="text-grey">some description</div>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#" class="product">
-								<div class="product-image">
-									<img src="./img/Untitled.jpeg" alt="" />
-								</div>
-								<div class="product-details">
-									<div class="">watch</div>
-									<div class="text-green">Up to 50% off</div>
-									<div class="text-grey">some description</div>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#" class="product">
-								<div class="product-image">
-									<img src="./img/Untitled.jpeg" alt="" />
-								</div>
-								<div class="product-details">
-									<div class="">watch</div>
-									<div class="text-green">Up to 50% off</div>
-									<div class="text-grey">some description</div>
+									<div class="text-grey">
+										women shoe Sneakers For Women (White , 6)
+									</div>
 								</div>
 							</a>
 						</li>
@@ -442,6 +446,7 @@
 				</div>
 				<div class="overflow_indicator">
 					<svg
+						data-hover
 						class="w-6 h-6 text-gray-800 dark:text-white"
 						aria-hidden="true"
 						xmlns="http://www.w3.org/2000/svg"
@@ -461,7 +466,7 @@
 				</div>
 			</div>
 			<div class="offer-holder">
-				<img src="./img/offerImg.webp" alt="offer" />
+				<img src="./img/offer-holder.webp" alt="offer" />
 			</div>
 		</section>
 		<section class="section-products">
@@ -480,155 +485,95 @@
 						<li>
 							<a href="#" class="product">
 								<div class="product-image">
-									<img src="./img/violin.jpeg" alt="" />
+									<img src="./img/inst-violin.webp" alt="" />
 								</div>
 								<div class="product-details">
-									<div class="">violin</div>
-									<div class="text-green">Up to 50% off</div>
-									<div class="text-grey">some description</div>
+									<div class="">Classical Violin</div>
+									<div class="text-green">&#x20b9;7145</div>
+									<div class="text-grey">
+										RockOn 4/4 Classical (Modern) Violin (Brown Yes)
+									</div>
 								</div>
 							</a>
 						</li>
 						<li>
 							<a href="#" class="product">
 								<div class="product-image">
-									<img src="./img/flute.jpeg" alt="" />
+									<img src="./img/inst-Bamboo-Flute.webp" alt="" />
 								</div>
 								<div class="product-details">
-									<div class="">flute</div>
-									<div class="text-green">Up to 50% off</div>
-									<div class="text-grey">some description</div>
+									<div class="">Bamboo Flute</div>
+									<div class="text-green">&#x20b9;970</div>
+									<div class="text-grey">
+										Foxit C Natural 7 Hole Right Hand Bansuri Size 19 inches
+										Bamboo Flute (48 cm)
+									</div>
 								</div>
 							</a>
 						</li>
 						<li>
 							<a href="#" class="product">
 								<div class="product-image">
-									<img src="./img/sitar.jpeg" alt="" />
+									<img src="./img/inst-Tabla-set.webp" alt="" />
 								</div>
 								<div class="product-details">
-									<div class="">sitar</div>
-									<div class="text-green">Up to 50% off</div>
-									<div class="text-grey">some description</div>
+									<div class="">Indian Tabla set Tabla</div>
+									<div class="text-green">&#x20b9;2970</div>
+									<div class="text-grey">
+										Musical Empires Indian Wooden Black Vaddi Tabla set Tabla
+										(Dayan - 14 cm, Bayan - 14 cm)
+									</div>
 								</div>
 							</a>
 						</li>
 						<li>
 							<a href="#" class="product">
 								<div class="product-image">
-									<img src="./img/Untitled.jpeg" alt="" />
+									<img src="./img/book-Atomic-Habits.webp" alt="" />
 								</div>
 								<div class="product-details">
-									<div class="">watch</div>
-									<div class="text-green">Up to 50% off</div>
-									<div class="text-grey">some description</div>
+									<div class="">Atomic Habits</div>
+									<div class="text-green">&#x20b9;239</div>
+									<div class="text-grey">
+										Atomic Habits - Paperback book in English (English,
+										Paperback, clear James)
+									</div>
 								</div>
 							</a>
 						</li>
 						<li>
 							<a href="#" class="product">
 								<div class="product-image">
-									<img src="./img/Untitled.jpeg" alt="" />
+									<img src="./img/book-Ankit-Bhati-STATIC.webp" alt="" />
 								</div>
 								<div class="product-details">
-									<div class="">watch</div>
-									<div class="text-green">Up to 50% off</div>
-									<div class="text-grey">some description</div>
+									<div class="">Ankit Bhati STATIC G.K Paperback</div>
+									<div class="text-green">&#x20b9;140</div>
+									<div class="text-grey">
+										Ankit Bhati STATIC G.K Paperback, Hindi, Ankit Bhati Sir,
+										Naveen Sharma Sir (Paperback, Hindi, ANKIT BHATI)
+									</div>
 								</div>
 							</a>
 						</li>
 						<li>
 							<a href="#" class="product">
 								<div class="product-image">
-									<img src="./img/Untitled.jpeg" alt="" />
+									<img src="./img/book-Aditya-Ranjan-Sir-Railway.webp" alt="" />
 								</div>
 								<div class="product-details">
-									<div class="">watch</div>
-									<div class="text-green">Up to 50% off</div>
-									<div class="text-grey">some description</div>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#" class="product">
-								<div class="product-image">
-									<img src="./img/Untitled.jpeg" alt="" />
-								</div>
-								<div class="product-details">
-									<div class="">watch</div>
-									<div class="text-green">Up to 50% off</div>
-									<div class="text-grey">some description</div>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#" class="product">
-								<div class="product-image">
-									<img src="./img/Untitled.jpeg" alt="" />
-								</div>
-								<div class="product-details">
-									<div class="">watch</div>
-									<div class="text-green">Up to 50% off</div>
-									<div class="text-grey">some description</div>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#" class="product">
-								<div class="product-image">
-									<img src="./img/Untitled.jpeg" alt="" />
-								</div>
-								<div class="product-details">
-									<div class="">watch</div>
-									<div class="text-green">Up to 50% off</div>
-									<div class="text-grey">some description</div>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#" class="product">
-								<div class="product-image">
-									<img src="./img/Untitled.jpeg" alt="" />
-								</div>
-								<div class="product-details">
-									<div class="">watch</div>
-									<div class="text-green">Up to 50% off</div>
-									<div class="text-grey">some description</div>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#" class="product">
-								<div class="product-image">
-									<img src="./img/Untitled.jpeg" alt="" />
-								</div>
-								<div class="product-details">
-									<div class="">watch</div>
-									<div class="text-green">Up to 50% off</div>
-									<div class="text-grey">some description</div>
+									<div class=""></div>
+									<div class="text-green">&#x20b9;235</div>
+									<div class="text-grey">
+										Aditya Ranjan Sir Railway Maths| Railway Ganit| Hindi Medium
+										| 4000+ Chapter-Wise MCQs | NTPC, RPF SI, RPF Constable,
+										ALP, Technician, Group D, RRB JE And Other Railway Exams
+										(Paperback, Hindi, Aditya Ranjan Sir)
+									</div>
 								</div>
 							</a>
 						</li>
 					</ul>
-				</div>
-				<div class="overflow_indicator">
-					<svg
-						class="w-6 h-6 text-gray-800 dark:text-white"
-						aria-hidden="true"
-						xmlns="http://www.w3.org/2000/svg"
-						width="24"
-						height="24"
-						fill="none"
-						viewBox="0 0 24 24"
-					>
-						<path
-							stroke="currentColor"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="2"
-							d="m9 5 7 7-7 7"
-						/>
-					</svg>
 				</div>
 			</div>
 		</section>

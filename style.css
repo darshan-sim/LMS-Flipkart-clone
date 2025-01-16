@@ -61,10 +61,6 @@ div {
     background-color: var(--clr-primary-blue);
 }
 
-.bg-red {
-    background-color: red;
-}
-
 .text-white {
     color: var(--clr-white)
 }
@@ -115,30 +111,47 @@ div {
     transition: opacity 50ms ease-in;
 }
 
+.border svg {
+    transition: transform 100ms ease-in-out;
+}
+
 .button:hover {
     opacity: .8;
 }
 
-
-/* .action-buttons>.button {
-    border: 1px solid red;
-} */
-
-
-/* .align-center>sapn {
-    border: 1px solid red;
+.button:hover svg[data-hover] {
+    transform: rotate(-180deg);
 }
 
-.align-center>svg {
-    border: 1px solid red;
-} */
+.logo {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    margin-inline-start: 1rem;
+    width: 12ch;
+}
+
+.logo .main-logo {
+    color: white;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.logo .tagline {
+    color: #ffe500;
+    font-style: italic;
+    font-size: 11px;
+    margin-top: -2px;
+}
+
+.logo .tagline span {
+    color: white;
+}
 
 .section-products {
-    /* border: 1px solid red; */
     max-width: 80vw;
     margin-inline: auto;
     margin-top: .6rem;
-    /* display: flex; */
     margin-bottom: 1rem;
 }
 
@@ -150,7 +163,6 @@ div {
 
 .offer-holder {
     max-width: 15rem;
-    /* min-height: 100%; */
     object-fit: fill;
     margin-left: 0.5rem;
 }
@@ -173,7 +185,6 @@ div {
 .navbar {
     display: flex;
     justify-content: center;
-    /* border: 1px solid red; */
     padding: .3rem 0rem;
     justify-content: center;
     align-items: center;
@@ -184,16 +195,6 @@ div {
 .selected {
     background-color: var(--clr-white);
     color: var(--clr-primary-blue);
-}
-
-.logo {
-    max-width: 1rem;
-    /* border: 1px solid red; */
-}
-
-.logo>img {
-    /* border: 1px solid red; */
-    height: 2.5rem;
 }
 
 .search {
@@ -209,11 +210,9 @@ div {
 
 .search>svg {
     min-width: 3rem;
-    /* border: 1px solid red; */
 }
 
 .search>input {
-    /* border: 1px solid red; */
     min-width: 1rem;
     flex: 1;
 }
@@ -244,7 +243,6 @@ div {
 .section-header {
     padding: 1rem;
     border-bottom: 1px solid rgb(209, 209, 209);
-    /* border: 1px solid red; */
 }
 
 .section-title {
@@ -270,7 +268,6 @@ div {
 
 @media screen and (max-width: 900px) {
     .section-header>*:not(:last-child) {
-        /* border: 1px solid red; */
         margin-bottom: .5rem;
     }
 }
@@ -294,7 +291,6 @@ div {
 
 .section-body {
     padding: 1rem;
-    /* border: 1px solid red; */
     overflow: scroll;
     position: relative;
 }
@@ -322,16 +318,15 @@ li {
     list-style-type: none;
 }
 
-.logo {
-    min-width: 10rem;
-}
-
 .categories-section {
     background-color: white;
     padding: 1rem;
     border-bottom: 1px solid var(--clr-grey);
-    /* border: 1px solid red; */
     overflow-x: scroll;
+}
+
+.border {
+    border: 1px solid red;
 }
 
 .categories {
@@ -343,7 +338,6 @@ li {
     align-items: center;
     gap: 1rem;
     /* overflow-x: scroll; */
-    /* border: 1px solid red; */
     /* flex-wrap: wrap; */
 }
 
@@ -354,19 +348,30 @@ li {
     text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .category:hover {
-    border: 1px solid var(--clr-grey);
+    /* border: 1px solid var(--clr-grey); */
+    box-shadow: 0 0 .2rem rgba(0, 0, 0, 0.3);
     border-radius: 3px;
+}
+
+svg[data-hover] {
+    transition: transform 100ms ease-in-out;
+}
+
+.category:hover svg[data-hover] {
+    transform: rotate(-180deg);
 }
 
 .category-image {
     display: flex;
     flex-grow: 3;
     align-items: center;
+    justify-content: center;
     min-height: 80%;
-    /* border: 1px solid red; */
 }
 
 .category-details {
@@ -397,10 +402,11 @@ li {
     text-align: center;
     display: flex;
     flex-direction: column;
+    padding: .3rem;
 }
 
 .product:hover {
-    border: 1px solid var(--clr-grey);
+    box-shadow: 0 0 .2rem rgba(0, 0, 0, 0.3);
     border-radius: 3px;
 }
 
@@ -408,9 +414,15 @@ li {
     display: flex;
     flex-grow: 3;
     align-items: center;
-    /* border: 1px solid red; */
     max-height: 12rem;
+    overflow: hidden;
+    object-fit: contain;
     /* min-width: ; */
+    margin-inline: auto;
+}
+
+.product-image>img {
+    max-height: 12rem;
 }
 
 .product-details {
@@ -418,4 +430,10 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+.product-details>div {
+    overflow: hidden;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
 }
